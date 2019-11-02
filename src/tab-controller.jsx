@@ -1,15 +1,6 @@
 import React, { useState, useEffect } from "react";
+import closeTabs from './close-tabs'
 
-const remove = () => {
-  chrome.tabs.query({}, function(tabs) {
-    for (let tab of Object.values(tabs)) {
-      const { active, id } = tab;
-      if (!active) {
-        chrome.tabs.remove(id, () => {});
-      }
-    }
-  });
-};
 
 const TabController = () => {
   const [emoji, setEmoji] = useState("");
@@ -839,14 +830,14 @@ const TabController = () => {
   useEffect(() => {
     const isChecked = localStorage.getItem("isChecked");
     if (isChecked !== "true") {
-      remove();
+      closeTabs();
       setEmoji(emojis[Math.floor(Math.random() * emojis.length)]);
     }
   }, []);
 
   return (
     <>
-      <span>Close!!</span>
+      <span>Closed!!</span>
       <span style={{ fontSize: "2rem" }}>{emoji}</span>
     </>
   );

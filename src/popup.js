@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import TabContoller from './tab-controll'
+import TabContoller from './tab-controller'
 
 ReactDOM.render(
   <TabContoller />,
