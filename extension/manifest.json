@@ -1,5 +1,5 @@
 {
-  "name": "Chrome Extension Starter Kit",
+  "name": "Close other tabs.",
   "description": "",
   "version": "1.0.0",
   "browser_action": {
@@ -10,12 +10,17 @@
     "tabs",
     "activeTab"
   ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+},
   "manifest_version": 2,
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
-        "default": "Ctrl+Shift+P",
-        "mac": "Command+Shift+P"
+        "default": "Ctrl+Shift+Y",
+        "mac": "Ctrl+Shift+Y"
       },
       "description": ""
     }

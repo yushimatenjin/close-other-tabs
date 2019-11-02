@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
+import TabContoller from './tab-controll'
 
 ReactDOM.render(
-  <div>Hello, Extension!</div>,
+  <TabContoller />,
   document.getElementById('app'),
 )
