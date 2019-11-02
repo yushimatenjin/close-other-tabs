@@ -28,7 +28,6 @@
   "scripts": {
     "build": "yarn clean & parcel build ./src/popup.html -d extension/dist --no-source-maps  --public-url ./",
     "clean": "rm -rf ./extension/dist ./dist ./.cache",
-    "lint": "eslint ./src",
     "watch": "parcel watch --no-hmr ./src/popup.html -d extension/dist --no-source-maps  --public-url ./"
   }
 }
