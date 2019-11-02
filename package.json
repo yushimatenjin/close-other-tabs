@@ -13,12 +13,6 @@
     "react-dom": "^16.11.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.16.0",
     "parcel-bundler": "^1.12.4"
   },
   "homepage": "https://github.com/yushimatenjin/close-other-tabs",
@@ -26,7 +20,7 @@
     "Chrome Extensions",
     "React"
   ],
-  "license": "MIT",
+  "license": "",
   "main": "dist/extension",
   "repository": {
     "url": "git@github.com:yushimatenjin/close-other-tabs.git"
