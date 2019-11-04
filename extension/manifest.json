@@ -1,28 +1,33 @@
 {
-  "name": "Close other tabs.",
-  "description": "現在開いているタブ以外を閉じます",
-  "version": "1.0.0",
-  "browser_action": {
-    "default_popup": "dist/popup.html"
-  },
-  "permissions": [
-    "bookmarks",
-    "tabs",
-    "activeTab"
-  ],
-  "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
-},
-  "manifest_version": 2,
-  "commands": {
-    "_execute_browser_action": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+Y",
-        "mac": "Ctrl+Shift+Y"
-      },
-      "description": ""
+    "name": "Close other tabs.",
+    "description": "現在開いているタブ以外を閉じます",
+    "version": "1.1.0",
+    "browser_action": {
+        "default_popup": "dist/popup.html"
+    },
+    "permissions": [
+        "bookmarks",
+        "tabs",
+        "activeTab",
+        "contextMenus"
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+
+    "background": {
+        "scripts": ["/dist/popup.ba0889f8.js"]
+    },
+    "manifest_version": 2,
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y",
+                "mac": "Ctrl+Shift+Y"
+            },
+            "description": ""
+        }
     }
-  }
 }

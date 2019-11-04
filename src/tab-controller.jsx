@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import closeTabs from './close-tabs'
-
+import { closeAllTabs, closeLeftTabs, cloesRightTabs } from "./close-tabs";
 
 const TabController = () => {
   const [emoji, setEmoji] = useState("");
@@ -830,7 +829,7 @@ const TabController = () => {
   useEffect(() => {
     const isChecked = localStorage.getItem("isChecked");
     if (isChecked !== "true") {
-      closeTabs();
+      closeAllTabs();
       setEmoji(emojis[Math.floor(Math.random() * emojis.length)]);
     }
   }, []);
